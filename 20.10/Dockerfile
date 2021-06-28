@@ -6,8 +6,8 @@
 
 FROM alpine:3.13
 
-RUN apk add --no-cache \
-		ca-certificates \
+RUN apk add --no-cache 
+# 		ca-certificates \
 # DOCKER_HOST=ssh://... -- https://github.com/docker/cli/pull/1014
 		openssh-client
 
