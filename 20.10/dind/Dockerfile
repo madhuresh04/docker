@@ -47,7 +47,7 @@ RUN set -eux; \
 COPY dockerd-entrypoint.sh /usr/local/bin/
 
 VOLUME /var/lib/docker
-EXPOSE 2375 2376
+EXPOSE 2375
 
 ENTRYPOINT ["dockerd-entrypoint.sh"]
 CMD []
